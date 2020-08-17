@@ -16,6 +16,7 @@
 	}
 	.slidecontainer {
 		padding-left: 75px;
+		padding-top: 10px;
 		width: 100%;
 	}
 	
@@ -84,8 +85,10 @@
 	  <input type="range" min="5" max="750" value="100" class="slider" id="_slider_">
 	</div>
 	<p><h2>
-		<div class="lenth" id="_length_">
+		<p>
+		<div class="length" id="_length_">
 		</div>
+		</p>
 		<p>
 		<div class="bend" id="_bend_">
 		</p></div>
@@ -101,7 +104,7 @@
 				LENGTH.innerHTML = "Length: " + SLIDER.value + " mm";
 				let _inches = SLIDER.value * 0.0393701;
 				let _depth = calcBendDepth(_inches);
-				DEPTH.innerHTML = "Bend Depth: " + _depth + " mm";
+				DEPTH.innerHTML = "Bend Depth: " + _depth + " Inches";
 				SLIDER_VALUE = SLIDER.value;
 			}
 			function subtract_slide(){
